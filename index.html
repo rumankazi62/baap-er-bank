@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baap Er Bank</title>
+  <!-- using internal raw css -->
+  <style>
+    @media only screen and (max-width: 600px) {
+  #font{
+    font-size: 25px;
+  }
+  #login-submit{
+    width: 70px;
+    padding: 2px 7px;
+    font-size: 10px;
+  }
+}
+  </style>
+  <!-- tailwind css link -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="text-4xl text-center mt-12">Welcome to my <span class="text-yellow-500">Baap-Er-Bank!!!</span></h1>
+  </header>
+  <main>
+    <section class="bg-green-100 w-2/4 mx-auto mt-8 p-6">
+      <h3 id="font" class="text-3xl mb-4 mx-auto w-72">Please Login</h3>
+      <div>
+        <input id="user-email" class="border-2 border-green-400 rounded mb-3 block w-3/4 mx-auto" type="email" placeholder="Enter your email.">
+        <!---------------!!---------------->
+        <input id="user-password" class="border-2 border-green-400 rounded block w-3/4 mx-auto" type="password" placeholder="Enter your password.">
+        <!---------------!!---------------->
+        <button id="login-submit" class="bg-green-700 px-8 py-3 text-xl text-white mt-4 mx-auto block rounded-xl border-2 border-yellow-300">Submit</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- conecting javascript file using script tag -->
+  <script src="JS/login.js"></script>
+</body>
+</html>
